@@ -1,7 +1,5 @@
 <!-- ## **HunyuanCustom** -->
 
-[中文阅读](./README_zh.md)
-
 <p align="center">
   <img src="assets/material/logo.png"  height=100>
 </p>
