@@ -154,7 +154,6 @@ conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=
 
 # 4. Install pip dependencies
 python -m pip install -r requirements.txt
-python -m pip install tensorrt-cu12-bindings==10.6.0 tensorrt-cu12-libs==10.6.0
 # 5. Install flash attention v2 for acceleration (requires CUDA 11.8 or above)
 python -m pip install ninja
 python -m pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.6.3
@@ -181,12 +180,12 @@ Additionally, you can also use HunyuanVideo Docker image. Use the following comm
 # For CUDA 12.4 (updated to avoid float point exception)
 docker pull hunyuanvideo/hunyuanvideo:cuda_12
 docker run -itd --gpus all --init --net=host --uts=host --ipc=host --name hunyuanvideo --security-opt=seccomp=unconfined --ulimit=stack=67108864 --ulimit=memlock=-1 --privileged hunyuanvideo/hunyuanvideo:cuda_12
-pip install gradio==3.39.0
+pip install gradio==3.39.0 diffusers==0.33.0 transformers==4.41.2
 
 # For CUDA 11.8
 docker pull hunyuanvideo/hunyuanvideo:cuda_11
 docker run -itd --gpus all --init --net=host --uts=host --ipc=host --name hunyuanvideo --security-opt=seccomp=unconfined --ulimit=stack=67108864 --ulimit=memlock=-1 --privileged hunyuanvideo/hunyuanvideo:cuda_11
-pip install gradio==3.39.0
+pip install gradio==3.39.0 diffusers==0.33.0 transformers==4.41.2
 ```
 
 
