@@ -1,8 +1,6 @@
-polygraphy==0.49.18
-tensorrt==10.6.0
 opencv-python==4.9.0.80
-diffusers==0.31.0
-transformers==4.46.3
+diffusers==0.33.0
+transformers==4.41.2
 tokenizers==0.20.3
 accelerate==1.1.1
 pandas==2.0.3
